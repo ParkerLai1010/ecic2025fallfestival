@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>秋影秘信 - 文化周邀请函</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-in-out;
+    }
+    .bg-autumn {
+      background: linear-gradient(to bottom, #4b2e2a, #8b5a2b);
+    }
+  </style>
+</head>
+<body class="bg-autumn flex flex-col items-center min-h-screen text-white">
+  <div class="max-w-md w-full p-6">
+    <h1 class="text-3xl font-bold text-center mb-4 animate-fadeIn">“秋影秘信”</h1>
+    <p class="text-center text-lg mb-6 animate-fadeIn">十月文化周邀请函</p>
+    
+    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg mb-6 animate-fadeIn">
+      <h2 class="text-xl font-semibold mb-3">匿名信函</h2>
+      <p class="text-sm mb-2"><strong>时间：</strong>10月29日（周三）问卷截止，10月31日（周五）送信</p>
+      <p class="text-sm mb-2"><strong>介绍：</strong>扫描问卷星二维码，填写信件内容与收信人，10月31日中午由神秘面具人送达。</p>
+      <p class="text-sm italic mb-2">P.S.我们会严格保证各位宾客的隐私，所有信件将保持匿名。</p>
+      <button onclick="window.location.href='https://www.wjx.cn/vm/r7TL0Nv.aspx'" class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition w-full">
+        填写匿名信
+      </button>
+    </div>
+
+    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg mb-6 animate-fadeIn">
+      <h2 class="text-xl font-semibold mb-3">南瓜灯工坊</h2>
+      <p class="text-sm mb-2"><strong>时间：</strong>10月28日（周二）中午</p>
+      <p class="text-sm mb-2"><strong>地点：</strong>三楼iPad教室</p>
+      <p class="text-sm mb-2"><strong>介绍：</strong>用黏土等材料打造专属南瓜灯，点亮秋夜创意！</p>
+    </div>
+
+    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg mb-6 animate-fadeIn">
+      <h2 class="text-xl font-semibold mb-3">糖果大作战</h2>
+      <p class="text-sm mb-2"><strong>时间：</strong>10月31日（周五）中午</p>
+      <p class="text-sm mb-2"><strong>地点：</strong>ipad教室</p>
+      <p class="text-sm mb-2"><strong>介绍：</strong>挑战趣味问答，赢取缤纷糖果！</p>
+    </div>
+
+    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg mb-6 animate-fadeIn">
+      <h2 class="text-xl font-semibold mb-3">着装要求</h2>
+      <p class="text-sm mb-2">a. 自行准备覆盖上半张脸或全脸的假面</p>
+      <p class="text-sm mb-2">b. 10月28日（周二）中午领取文艺部准备的面具材料</p>
+      <p class="text-sm italic">P.S.为保证各位宾客的安全，请不要于10月31日（周五）之前暴露您的假面样式，感谢您的配合。</p>
+    </div>
+
+    <p class="text-center text-sm italic animate-fadeIn">衷心期待您的到来！<br>—— ECIC文艺部</p>
+  </div>
+
+  <script>
+    // 微信分享配置（可选，需JSSDK）
+    if (navigator.userAgent.includes('MicroMessenger')) {
+      document.addEventListener('WeixinJSBridgeReady', function() {
+        WeixinJSBridge.call('showOptionMenu');
+      });
+    }
+  </script>
+</body>
+</html>
